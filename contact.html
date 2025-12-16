@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #222;
+        }
+
+        .page-header {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input.half, textarea.half {
+            width: calc(50% - 10px);
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 150px;
+            padding: 10px 0;
+            margin: 20px auto 0;
+            background: #60ff30;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+        }
+
+        .submit-btn:hover {
+            background: #fbbf24;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-header">
+        <h1>GET IN CONTACT WITH US </h1>
+    </div>
+
+    <div class="contact-container">
+        <form action="#" method="POST">
+            <div>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile Number *</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+
+            <div style="width:100%;">
+                <label for="message">Write your Message *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+</html>
